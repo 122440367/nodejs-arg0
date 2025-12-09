@@ -4,6 +4,9 @@ WORKDIR /tmp
 
 COPY . .
 
+# 列出文件，检查index.js是否被复制
+RUN ls -la
+
 EXPOSE 3000/tcp
 
 RUN apk update && apk upgrade &&\
