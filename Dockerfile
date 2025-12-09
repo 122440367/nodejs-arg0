@@ -1,11 +1,8 @@
 FROM node:alpine3.20
 
-WORKDIR /tmp
+WORKDIR /app
 
 COPY . .
-
-# 列出文件，检查index.js是否被复制
-RUN ls -la
 
 EXPOSE 3000/tcp
 
